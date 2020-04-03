@@ -22,6 +22,37 @@ body {
 .city_search {
     background-color: #41424217;
     height: 50.0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    border: 1px solid #000000;
+    margin-left: 2.0rem;
+}
+
+#searched_city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+    height: 4.0rem;
+    margin: 3.5rem 0 0 2.0rem;
+}
+
+.search_button {
+    background-color: #46b8e68a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.0rem;
+    font-size: 100%;
+    margin-top: 3.5rem;
+    margin-left: 0;
 }
 
 .weather_today {
@@ -36,6 +67,7 @@ body {
 
 #city_selected, #five_day_forecast {
     font-size: 2.8rem;
+    margin-bottom: 2.0rem;
 }
 
 .selected_daily {
@@ -50,4 +82,13 @@ body {
     background-color: #46b8e68a;
     border-radius: 1.0rem;
     height: 14.2rem;
+}
+
+
+
+
+@media (max-width: 771.98px) {
+    .search_button {
+        display: none;
+    }
 }
