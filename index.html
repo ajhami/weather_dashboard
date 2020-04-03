@@ -2,46 +2,73 @@
 <html lang="en">
     
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- Bootstrap -->
-        <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
-        <!-- Pure 
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
-        -->
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
-        <![endif]-->
-        <!--[if gt IE 8]><!-->
-        <!--<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">-->
-        <!--<![endif]-->
+        
+        <!-- Skeleton Framework -->
         <link rel="stylesheet" href="./assets/css/normalize.css">
         <link rel="stylesheet" href="./assets/css/skeleton.css">
+        
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="icon" href="./assets/images/weather_icon.png">
+    
         <title>Weather Dashboard</title>
+    
     </head>
     
     <body>
-        <h1>Hello, World!</h1>
-        <p>test</p>
-        <h2>h2 test</h2>
 
-        <div class="pure-g">
-            <div class="three columns"><p>One</p></div>
-            <div class="three columns"><p>Two</p></div>
-            <div class="three columns"><p>Three</p></div>
-            <div class="three columns"><p>Four</p></div>
-        </div>
+        <section class="row wd_header">
+            <div class="twelve rows">
+                <h1><img class="weather_icon" src="./assets/images/weather_icon.png" alt="weather icon"> Weather Dashboard</h1>
+            </div>
+        </section>
 
+        <!--<div class="container">-->
+            <!--
+            <section class="row wd_header">
+                <div class="twelve rows">
+                    <h1><img class="weather_icon" src="./assets/images/weather_icon.png" alt="weather icon"> Weather Dashboard</h1>
+                </div>
+            </section>
+            -->
+            <section class="row">
+                <div class="four columns city_search">
+                    <span class="search_for">Search for a city:</span>
+                </div>
+                <div class="eight columns">
+                    <div class="weather_today">
+                        <span id="city_selected">Search for / Select a City</span>
+                        <p class="selected_daily">Temperature: <span id="selected_temp"></span></p>
+                        <p class="selected_daily">Humidity: <span id="selected_humid"></span></p>
+                        <p class="selected_daily">Wind Speed: <span id="selected_wind"></span></p>
+                        <p class="selected_daily">UV Index: <span id="selected_UV"></span></p>
+                    </div>
+                    <div class="forecast_5day">
+                        <span id="five_day_forecast">5-Day Forecast</span>
+                        <div class="row">
+                            <div class="two columns forecast_box">Day 1</div>
+                            <div class="two columns forecast_box">Day 2</div>
+                            <div class="two columns forecast_box">Day 3</div>
+                            <div class="two columns forecast_box">Day 4</div>
+                            <div class="two columns forecast_box">Day 5</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        <!--</div>-->
 
 
 
         <!-- scripts -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-        <script src="./assets/javaScript/script.js"></script>
+        <script src="./assets/javaScript/index.js"></script>
+
     </body>
 
 </html>
