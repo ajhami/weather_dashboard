@@ -68,6 +68,8 @@ li {
 #city_selected, #five_day_forecast {
     font-size: 2.8rem;
     margin-bottom: 2.0rem;
+    display: flex;
+    align-items: center;
 }
 
 .selected_daily {
@@ -84,8 +86,17 @@ li {
     height: 14.2rem;
 }
 
+.forecast_days, .forecast_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
 
-
+.forecast_temps, .forecast_humids {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
 
 @media (max-width: 771.98px) {
     .search_button {
