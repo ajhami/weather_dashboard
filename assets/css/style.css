@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
@@ -27,11 +29,25 @@ body {
 }
 
 li {
+    background-color: #8b1d1da4;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 75%;
-    border: 1px solid #000000;
+    border: 1px solid #700f0f52;
+    margin-left: 2.0rem;
+}
+
+.clear_button {
+    background-color: #d3b300a2;
+    color: #ffffff;
+    font-size: 2.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    border: 1px solid #9284005e;
     margin-left: 2.0rem;
 }
 
@@ -81,12 +97,14 @@ li {
 }
 
 .forecast_box {
-    background-color: #46b8e68a;
+    background-color: #8b1d1da4;
     border-radius: 1.0rem;
     height: 14.2rem;
+    margin-bottom: 3.0rem;
 }
 
 .forecast_days, .forecast_icons {
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,6 +112,7 @@ li {
 }
 
 .forecast_temps, .forecast_humids {
+    color: #ffffff;
     font-size: 1.3rem;
     margin-left: 0.5rem;
 }

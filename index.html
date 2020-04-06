@@ -1,6 +1,11 @@
+<!--
+    Weather Dashboard
+    April 6, 2020
+    © Alexander James Hamilton
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-    
     <head>
 
         <meta charset="UTF-8">
@@ -26,72 +31,60 @@
             </div>
         </section>
 
-        <!--<div class="container">-->
-            <!--
-            <section class="row wd_header">
-                <div class="twelve rows">
-                    <h1><img class="weather_icon" src="./assets/images/weather_icon.png" alt="weather icon"> Weather Dashboard</h1>
+        <section class="row">
+            <div class="four columns city_search">
+                <form class="row">
+                    <input class="eight columns" id="searched_city" value="" placeholder="Choose a city..."></input>
+                    <button class="one column search_button">&#x1F50D;</button>
+                </form>
+                <ol id="city_list"></ol>
+                <button class="clear_button">Clear History</button>
+            </div>
+            <div class="eight columns">
+                <div class="weather_today">
+                    <span id="city_selected">Search for / Select a City</span>
+                    <p class="selected_daily">Temperature: <span id="selected_temp"></span></p>
+                    <p class="selected_daily">Humidity: <span id="selected_humid"></span></p>
+                    <p class="selected_daily">Wind Speed: <span id="selected_wind"></span></p>
+                    <p class="selected_daily">UV Index: <span id="selected_UV"></span></p>
                 </div>
-            </section>
-            -->
-            <section class="row">
-                <div class="four columns city_search">
-                    <form class="row">
-                        <input class="eight columns" id="searched_city" value="" placeholder="Choose a city..."></input>
-                        <button class="one column search_button">&#x1F50D;</button>
-                    </form>
-                    <ol id="city_list"></ol>
-                </div>
-                <div class="eight columns">
-                    <div class="weather_today">
-                        <span id="city_selected">Search for / Select a City</span>
-                        <p class="selected_daily">Temperature: <span id="selected_temp"></span></p>
-                        <p class="selected_daily">Humidity: <span id="selected_humid"></span></p>
-                        <p class="selected_daily">Wind Speed: <span id="selected_wind"></span></p>
-                        <p class="selected_daily">UV Index: <span id="selected_UV"></span></p>
-                    </div>
-                    <div class="forecast_5day">
-                        <span id="five_day_forecast">5-Day Forecast</span>
-                        <div class="row">
-                            <div class="two columns forecast_box">
-                                <span id="day1" class="forecast_days"></span>
-                                <span id="day1_icon" class="forecast_icons"></span>
-                                <span id="day1_temp" class="forecast_temps"></span>
-                                <span id="day1_humid" class="forecast_humids"></span>
-                            </div>
-                            <div class="two columns forecast_box">
-                                <span id="day2" class="forecast_days"></span>
-                                <span id="day2_icon" class="forecast_icons"></span>
-                                <span id="day2_temp" class="forecast_temps"></span>
-                                <span id="day2_humid" class="forecast_humids"></span>
-                            </div>
-                            <div class="two columns forecast_box">
-                                <span id="day3" class="forecast_days"></span>
-                                <span id="day3_icon" class="forecast_icons"></span>
-                                <span id="day3_temp" class="forecast_temps"></span>
-                                <span id="day3_humid" class="forecast_humids"></span>
-                            </div>
-                            <div class="two columns forecast_box">
-                                <span id="day4" class="forecast_days"></span>
-                                <span id="day4_icon" class="forecast_icons"></span>
-                                <span id="day4_temp" class="forecast_temps"></span>
-                                <span id="day4_humid" class="forecast_humids"></span>
-                            </div>
-                            <div class="two columns forecast_box">
-                                <span id="day5" class="forecast_days"></span>
-                                <span id="day5_icon" class="forecast_icons"></span>
-                                <span id="day5_temp" class="forecast_temps"></span>
-                                <span id="day5_humid" class="forecast_humids"></span>
-                            </div>
+                <div class="forecast_5day">
+                    <span id="five_day_forecast">5-Day Forecast</span>
+                    <div class="row">
+                        <div class="two columns forecast_box">
+                            <span id="day1" class="forecast_days"></span>
+                            <span id="day1_icon" class="forecast_icons"></span>
+                            <span id="day1_temp" class="forecast_temps"></span>
+                            <span id="day1_humid" class="forecast_humids"></span>
+                        </div>
+                        <div class="two columns forecast_box">
+                            <span id="day2" class="forecast_days"></span>
+                            <span id="day2_icon" class="forecast_icons"></span>
+                            <span id="day2_temp" class="forecast_temps"></span>
+                            <span id="day2_humid" class="forecast_humids"></span>
+                        </div>
+                        <div class="two columns forecast_box">
+                            <span id="day3" class="forecast_days"></span>
+                            <span id="day3_icon" class="forecast_icons"></span>
+                            <span id="day3_temp" class="forecast_temps"></span>
+                            <span id="day3_humid" class="forecast_humids"></span>
+                        </div>
+                        <div class="two columns forecast_box">
+                            <span id="day4" class="forecast_days"></span>
+                            <span id="day4_icon" class="forecast_icons"></span>
+                            <span id="day4_temp" class="forecast_temps"></span>
+                            <span id="day4_humid" class="forecast_humids"></span>
+                        </div>
+                        <div class="two columns forecast_box">
+                            <span id="day5" class="forecast_days"></span>
+                            <span id="day5_icon" class="forecast_icons"></span>
+                            <span id="day5_temp" class="forecast_temps"></span>
+                            <span id="day5_humid" class="forecast_humids"></span>
                         </div>
                     </div>
                 </div>
-            </section>
-
-
-        <!--</div>-->
-
-
+            </div>
+        </section>
 
         <!-- scripts -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
